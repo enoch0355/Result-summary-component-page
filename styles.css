@@ -1,0 +1,155 @@
+@import url('https://googleapis.com');
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(221, 100%, 96%);
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body > div {
+  display: flex;
+  flex-direction: row;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Keeps the gradient corners rounded */
+}
+
+body > div > .div-1 {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.div-1 > p:first-child {
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.div-1 > div {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-1 h1 {
+  font-size: 56px;
+  margin: 0;
+}
+
+.div-1 div p {
+  color: hsla(241, 100%, 89%, 0.5);
+  margin: 0;
+}
+
+.div-1 h4 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.div-1 p:last-child {
+  color: hsl(241, 100%, 89%);
+  font-size: 15px;
+}
+
+body > div > div:nth-child(2) {
+  padding: 35px;
+  width: 300px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: hsl(224, 30%, 27%);
+}
+
+.colth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Pushes content to the edges */
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+
+.colth div {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+.colth p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.colth > p {
+  color: gray;
+}
+
+.colth span {
+  color: hsl(224, 30%, 27%);
+}
+
+button {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+    justify-content: flex-start;
+  }
+  body > div {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+  }
+  body > div > .div-1 {
+    width: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.red > p { color: hsl(0, 100%, 67%); }
+.orange > p { color: hsl(39, 100%, 56%); }
+.green > p { color: hsl(166, 100%, 37%); }
+.blue > p { color: hsl(234, 85%, 45%); }
+
+.c0 { background: hsla(0, 100%, 67%, 0.05); }
+.c1 { background: hsla(39, 100%, 56%, 0.05); }
+.c2 { background: hsla(166, 100%, 37%, 0.05); }
+.c3 { background: hsla(234, 85%, 45%, 0.05); }
